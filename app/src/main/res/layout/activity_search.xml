@@ -1,10 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".search_activity">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mainSearch">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/back"
+        >
+        <ImageView
+            android:id="@+id/backArrow"
+            style="@style/SettingsArrowBackButton"
+            android:src="@drawable/arrowback"
+           />
+        <TextView
+            android:id="@+id/searchText"
+            android:text="@string/search"
+            style="@style/SettingsPageBackButton"
+            />
+    </LinearLayout>
+
+</LinearLayout>

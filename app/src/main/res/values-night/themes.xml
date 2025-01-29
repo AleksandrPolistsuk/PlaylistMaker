@@ -5,7 +5,5 @@
         <item name="colorOnPrimary">#FFFFFF</item>
         <item name="ButtonSettingsScreenColor">@color/white</item>
 
-
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 </resources>

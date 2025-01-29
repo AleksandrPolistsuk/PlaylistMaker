@@ -7,4 +7,16 @@
     <string name="blackTheme">Темная тема</string>
     <string name="support">Написать в поддержку</string>
     <string name="agreements">Пользовательское соглашение</string>
+    <string name="noMail">Почтовый клиент не установлен по умолчанию</string>
+    <string name="eMail">luckycampshop@gmail.com</string>
+    <string name="subject">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
+    <string name="body">Спасибо разработчикам и разработчицам за крутое приложение!</string>
+    <string name="url" translatable="false">https://practicum.yandex.ru/legal/offer/</string>
+    <string name="browsError">Нет браузера по умолчанию.</string>
+    <string name="mailto" translatable="false">mailto:</string>
+    <string name="http" translatable="false">https://practicum.yandex.com/android-developer/</string>
+    <string name="tp" translatable="false">text/plain</string>
+    <string name="appShareText">Поделиться приложением через:</string>
+
+
 </resources>
