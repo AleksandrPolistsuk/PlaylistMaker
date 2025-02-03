@@ -5,4 +5,7 @@
     <color name="blue">#3772E7</color>
     <color name="grey">#AEAFB4</color>
     <color name="icoColour">#FFFFFFFF</color>
+    <color name="greySearchfield">#FFFFFF</color>
+    <color name="iconSearchfield">#FF000000</color>
+
 </resources>
