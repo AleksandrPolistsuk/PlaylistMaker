@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<style name="ButtonMainPage">
+<style name="ButtonMainPage" parent="Widget.MaterialComponents.Button.UnelevatedButton">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">0dp</item>
     <item name="android:backgroundTint">@color/white</item>
@@ -17,6 +17,8 @@
     <item name="android:textFontWeight">500</item>
     <item name="android:stateListAnimator">@null</item>
     <item name="android:textAllCaps">false</item>
+    <item name="android:layout_marginStart">16dp</item>
+    <item name="android:layout_marginEnd">16dp</item>
 
 </style>
 
@@ -57,6 +59,27 @@
         <item name="android:fontFamily">@font/ys_display_regular</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">@dimen/secondMenuTextSize</item>
+    </style>
+
+    <style name="SettingsLineSettings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/ys_display_regular</item>
+    </style>
+    <style name="SettingsSwitch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="thumbTint">@color/switcherColorPoint</item>
+        <item name="trackTint">@color/switcherColorLine</item>
     </style>
     <style name="IconColorScreens">
         <item name ="android:fillColor">@color/grey</item>

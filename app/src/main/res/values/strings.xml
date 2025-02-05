@@ -11,7 +11,7 @@
     <string name="eMail">luckycampshop@gmail.com</string>
     <string name="subject">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
     <string name="body">Спасибо разработчикам и разработчицам за крутое приложение!</string>
-    <string name="url" translatable="false">https://practicum.yandex.ru/legal/offer/</string>
+    <string name="url" translatable="false">https://yandex.ru/legal/practicum_offer/</string>
     <string name="browsError">Нет браузера по умолчанию.</string>
     <string name="mailto" translatable="false">mailto:</string>
     <string name="http" translatable="false">https://practicum.yandex.com/android-developer/</string>

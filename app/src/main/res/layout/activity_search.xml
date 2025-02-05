@@ -25,7 +25,9 @@
         <EditText
             android:id="@+id/editTextField"
             style="@style/SearchPageEditTextField"
-            android:hint="@string/search" />
+            android:hint="@string/search"
+            android:textCursorDrawable="@drawable/cursor"
+            />
 
         <ImageView
             android:id="@+id/clearButton"

@@ -16,66 +16,31 @@
             />
 
     </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lineHeight"
-        android:layout_marginTop="24dp">
 
-        <TextView
-            android:text="@string/blackTheme"
-            style="@style/SettingsActivityStringText"
-            />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switcher"
+        android:text="@string/blackTheme"
+  style="@style/SettingsSwitch"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/share"
+        android:id="@+id/share"
+        android:drawableEnd="@drawable/lm_share"
+      style="@style/SettingsLineSettings"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/support"
+        android:drawableEnd="@drawable/lm_support"
+        android:id="@+id/support"
+        style="@style/SettingsLineSettings"
+        />
 
-        <ImageView
-            style="@style/Switcher"
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/agreements"
+        android:drawableEnd="@drawable/lm_arrow"
+        android:id="@+id/agreements"
+        style="@style/SettingsLineSettings"
+        />
 
-            />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lineHeight">
-
-        <TextView
-            android:text="@string/share"
-            android:id="@+id/text_share"
-            style="@style/SettingsActivityStringText"
-            />
-
-        <ImageView
-            android:id="@+id/share"
-            style="@style/SettingsScreenIconSettings"
-            android:src="@drawable/lm_share" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lineHeight">
-
-        <TextView
-            android:text="@string/support"
-            style="@style/SettingsActivityStringText"
-            />
-
-        <ImageView
-            android:id="@+id/support"
-            style="@style/SettingsScreenIconSettings"
-            android:src="@drawable/lm_support" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/lineHeight">
-
-        <TextView
-            android:text="@string/agreements"
-            style="@style/SettingsActivityStringText"
-            />
-
-        <ImageView
-            android:id="@+id/agreements"
-            style="@style/SettingsScreenIconSettings"
-            android:src="@drawable/lm_arrow" />
-    </RelativeLayout>
 
 </LinearLayout>
