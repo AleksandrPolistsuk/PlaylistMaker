@@ -21,9 +21,11 @@ class TrackViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         longTimeMusic.text = track.trackTime
 
         val requestOptions = RequestOptions()
-            .placeholder(R.drawable.placeholder) // Плейсхолдер при отсутствии интернета
-            .error(R.drawable.placeholder) // Плейсхолдер при ошибке загрузки
-            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .placeholder(R.drawable.placeholder)
+            .error(R.drawable.placeholder)
+            .diskCacheStrategy(DiskCacheStrategy.NONE)
+            .skipMemoryCache(true)
+
 
         Glide.with(itemView.context)
             .load(track.artworkUrl100)
