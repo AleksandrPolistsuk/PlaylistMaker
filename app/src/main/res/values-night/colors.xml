@@ -9,4 +9,6 @@
     <color name="iconSearchfield">#FF000000</color>
     <color name="switcherColorLine">#9FBBF3</color>
     <color name="switcherColorPoint">#3772E7</color>
+    <color name="musicGroupColor">#FFFFFF</color>
+
 </resources>

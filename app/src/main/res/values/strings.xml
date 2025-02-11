@@ -17,6 +17,8 @@
     <string name="http" translatable="false">https://practicum.yandex.com/android-developer/</string>
     <string name="tp" translatable="false">text/plain</string>
     <string name="appShareText">Поделиться приложением через:</string>
-
+    <string name="music_track_name">Track name</string>
+     <string name="music_group_name">Group name</string>
+     <string name="music_track_duration">00:00</string>
 
 </resources>

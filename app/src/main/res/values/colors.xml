@@ -7,7 +7,7 @@
     <color name="greySearchfield">#E6E8EB</color>
     <color name="iconSearchfield">#AEAFB4</color>
     <color name="icoColour">#FF000000</color>
-
+    <color name="musicGroupColor">#AEAFB4</color>
     <color name="switcherColorLine">#E6E8EB</color>
     <color name="switcherColorPoint">#AEAFB4</color>
 </resources>

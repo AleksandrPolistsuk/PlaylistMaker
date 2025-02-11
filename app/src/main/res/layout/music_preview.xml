@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/musPreviewMainLinear">
+
+    <ImageView
+        android:id="@+id/imageMusic"
+        style="@style/musPreviewImage"
+        android:src="@drawable/imagetest"/>
+
+    <LinearLayout
+        style="@style/musPreviewTextContainer">
+
+        <TextView
+            android:id="@+id/trackName"
+            style="@style/musPreviewTrackName"
+            android:text="@string/music_track_name"/>
+
+        <LinearLayout
+            style="@style/musPreviewGroupTimeContainer">
+
+
+            <TextView
+                android:id="@+id/groupName"
+                style="@style/musPreviewGroupText"
+                android:text="@string/music_group_name"/>
+
+            <ImageView
+                style="@style/musPreviewDot"
+                android:src="@drawable/ellipse"/>
+
+            <TextView
+                android:id="@+id/longTimeMusic"
+                style="@style/musPreviewTimeText"
+                android:text="@string/music_track_duration"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        style="@style/musPreviewArrow"
+        android:src="@drawable/aroowmusic"/>
+
+</LinearLayout>
