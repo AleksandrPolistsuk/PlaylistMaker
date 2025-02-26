@@ -5,7 +5,7 @@
     <ImageView
         android:id="@+id/imageMusic"
         style="@style/musPreviewImage"
-        android:src="@drawable/imagetest"/>
+        android:src="@drawable/placeholder"/>
 
     <LinearLayout
         style="@style/musPreviewTextContainer">

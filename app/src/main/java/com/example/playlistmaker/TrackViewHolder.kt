@@ -9,7 +9,6 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 
 class TrackViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-
     private val imageMusic: ImageView = view.findViewById(R.id.imageMusic)
     private val trackName: TextView = view.findViewById(R.id.trackName)
     private val groupName: TextView = view.findViewById(R.id.groupName)
@@ -18,19 +17,15 @@ class TrackViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(track: Track) {
         trackName.text = track.trackName
         groupName.text = track.artistName
-        longTimeMusic.text = track.trackTime
+        longTimeMusic.text = track.getFormattedTime()
 
-        val requestOptions = RequestOptions()
+        Glide.with(itemView.context)
+            .load(track.artworkUrl100)
             .placeholder(R.drawable.placeholder)
             .error(R.drawable.placeholder)
             .diskCacheStrategy(DiskCacheStrategy.NONE)
             .skipMemoryCache(true)
-
-
-        Glide.with(itemView.context)
-            .load(track.artworkUrl100)
-            .apply(requestOptions)
-            .apply(RequestOptions().transform(RoundedCorners(2)))
             .into(imageMusic)
+
     }
 }

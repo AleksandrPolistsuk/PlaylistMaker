@@ -10,4 +10,5 @@
     <color name="musicGroupColor">#AEAFB4</color>
     <color name="switcherColorLine">#E6E8EB</color>
     <color name="switcherColorPoint">#AEAFB4</color>
+    <color name="icoColourReverse">#FFFFFF</color>
 </resources>

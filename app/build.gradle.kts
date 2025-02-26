@@ -45,5 +45,10 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+    // Retrofit для HTTP-запросов
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // Конвертер JSON в объекты Kotlin (Gson)
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
 }

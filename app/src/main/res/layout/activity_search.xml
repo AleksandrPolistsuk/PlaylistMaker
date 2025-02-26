@@ -1,46 +1,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:fitsSystemWindows="true"
-    android:id="@+id/mainSearch"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MainContainer"
+    android:id="@+id/mainSearch">
 
     <LinearLayout
         style="@style/menuBackStyle"
-        android:id="@+id/back"
-        >
-
+        android:id="@+id/back">
         <TextView
             android:id="@+id/searchText"
             style="@style/SettingsPageBackButton"
             android:text="@string/search" />
-
     </LinearLayout>
 
     <FrameLayout
-        style="@style/activitySearchLineSettings"
-        android:layout_marginBottom="16dp"
-              >
-
+        style="@style/activitySearchLineSettings">
         <EditText
             android:id="@+id/editTextField"
             style="@style/SearchPageEditTextField"
             android:hint="@string/search"
-            android:textCursorDrawable="@drawable/cursor"
-            />
-
+            android:textCursorDrawable="@drawable/cursor"/>
         <ImageView
             android:id="@+id/clearButton"
             android:src="@drawable/cleartext"
             style="@style/imageCancelText"/>
-
-
     </FrameLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       />
+        style="@style/RecyclerViewStyle"/>
+
+    <LinearLayout
+        android:id="@+id/placeholder_no_results"
+        style="@style/PlaceholderContainer"
+        android:visibility="gone">
+        <ImageView
+            style="@style/PlaceholderImage"
+            android:src="@drawable/errornotfounddarkmode" />
+        <TextView
+            style="@style/PlaceholderText"
+            android:text="@string/no_results"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/placeholder_error"
+        style="@style/PlaceholderContainer"
+        android:visibility="gone">
+        <ImageView
+            style="@style/PlaceholderImage"
+            android:src="@drawable/networkproblemdarkmode"/>
+        <TextView
+            style="@style/PlaceholderText"
+            android:text="@string/error_connection"/>
+        <TextView
+            style="@style/PlaceholderSubText"
+            android:text="@string/error_message"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_retry"
+            style="@style/RetryButton"
+            android:text="@string/retry"/>
+    </LinearLayout>
 
 </LinearLayout>

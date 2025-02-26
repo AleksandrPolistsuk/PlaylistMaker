@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val msButton = findViewById<Button>(R.id.mediaStockButton)
 
         search.setOnClickListener {
-            val intent = Intent(this, search_activity::class.java)
+            val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
         msButton.setOnClickListener {

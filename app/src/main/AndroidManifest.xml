@@ -14,7 +14,7 @@
         android:theme="@style/Base.Theme.PlaylistMaker"
         tools:targetApi="31">
         <activity
-            android:name=".search_activity"
+            android:name=".SearchActivity"
             android:exported="false" />
         <activity
             android:name=".mediaStock_activity"

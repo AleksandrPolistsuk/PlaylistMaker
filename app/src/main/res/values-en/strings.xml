@@ -14,4 +14,8 @@
     <string name="body">Thank you for developers for this cool application!</string>
     <string name="browsError">No browser installed</string>
     <string name="appShareText">Share application through:</string>
+    <string name="no_results">Nothing found</string>
+    <string name="error_connection">Network troubles</string>
+    <string name="error_message">Check internet connection</string>
+    <string name="retry">Refresh</string>
 </resources>
