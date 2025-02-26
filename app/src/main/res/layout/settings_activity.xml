@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainSettings"
+    style="@style/SettingsPage"
+    >
+
+    <LinearLayout
+        style="@style/menuBackStyle"
+        android:id="@+id/back"
+                >
+
+               <TextView
+            android:text="@string/settings"
+            android:id="@+id/backButton"
+            style="@style/SettingsPageBackButton"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switcher"
+        android:text="@string/blackTheme"
+  style="@style/SettingsSwitch"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/share"
+        android:id="@+id/share"
+        android:drawableEnd="@drawable/lm_share"
+      style="@style/SettingsLineSettings"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/support"
+        android:drawableEnd="@drawable/lm_support"
+        android:id="@+id/support"
+        style="@style/SettingsLineSettings"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/agreements"
+        android:drawableEnd="@drawable/lm_arrow"
+        android:id="@+id/agreements"
+        style="@style/SettingsLineSettings"
+        />
+
+
+</LinearLayout>
